@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <section>
-            <article className="w-full shadow-lg shadow-slate-400">
+            <article className="w-full shadow-lg shadow-slate-400 relative">
+                <h1 className="text-white text-3xl font-semibold absolute start-8 top-5 ">2023 FORD MUSTANG MACH-E</h1>
                 <img className="w-full" src="https://www.ford.com/cmslibs/content/dam/vdm_ford/live/en_us/ford/nameplate/mache/2023/collections/3_2/EAxBaker22053_fade_16_7.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg" alt="car" />
                 <section className="flex border border-gray-300">
                     <article className=" border border-gray-300 w-1/4 text-center p-4">
@@ -56,7 +57,7 @@ const Home = () => {
                 <h1 className="font-semibold text-4xl text-blue-900 my-3 p-4">Roam Far and Wide on a Single Charge</h1>
                 <p className="text-center max-w-3xl text-base m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, cupiditate quam. Libero veniam nihil distinctio blanditiis facilis magnam id, et eligendi asperiores fugit eum obcaecati laborum perspiciatis in consectetur vitae?</p>
                 <div className="w-full  ">
-                    <img className="w-full object-cover" src="https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/mache/2023/collections/dm/EAxBaker22036.tif?croppathe=1_21x9&wid=900" alt="Charge" />
+                    <img className="w-full object-cover shadow-md shadow-slate-500" src="https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/mache/2023/collections/dm/EAxBaker22036.tif?croppathe=1_21x9&wid=900" alt="Charge" />
                 </div>
             </article>
         </section>
