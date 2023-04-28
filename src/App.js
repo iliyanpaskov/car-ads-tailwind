@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import WhyMustang from "./components/WhyMustang";
+import GetNotifications from "./components/GetNotifications";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mustang" element={<WhyMustang />} />
+          <Route path="//get-notifications" element={<GetNotifications />} />
         </Routes>
 
       </main>
