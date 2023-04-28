@@ -6,6 +6,7 @@ import WhyMustang from "./components/WhyMustang";
 import GetNotifications from "./components/GetNotifications";
 import NotFound from "./components/NotFound";
 import Gallery from "./components/Gallery";
+import GalleryInterior from "./components/GalleryInterior";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="/mustang" element={<WhyMustang />} />
           <Route path="/get-notifications" element={<GetNotifications />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery/interior" element={<GalleryInterior />} />
+          <Route path="/gallery/exterior" element={<></>} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
 

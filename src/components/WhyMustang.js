@@ -31,7 +31,7 @@ const WhyMustang = () => {
                     <img className=" w-full h-96 object-cover" src="./images/ff.jpg" alt="" />
                 </article>
 
-                <article  className="p-6  text-gray-700 flex flex-col items-center text-center">
+                <article className="p-6  text-gray-700 flex flex-col items-center text-center">
                     <h1 className="text-center text-4xl m-4">0 emissions !</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero quas
@@ -52,10 +52,25 @@ const WhyMustang = () => {
                     <img className=" w-full h-96 object-cover" src="/images/6w.webp" alt="" />
                 </article>
 
-                <article  className="p-6  text-gray-700 flex flex-col items-center text-center">
+                <article className="p-6  text-gray-700 flex flex-col items-center text-center">
                     <h1 className="text-center text-4xl m-4">GT with 480 horsepower !</h1>
                     <p>
-                    Is the Ford Mustang MACH-E fast? The 2023 Mustang MACH-E ranges in power from the Select with 266 horsepower to the GT with 480 horsepower.
+                        Is the Ford Mustang MACH-E fast? The 2023 Mustang MACH-E ranges in power from the Select with 266 horsepower to the GT with 480 horsepower.
+                    </p>
+                </article>
+            </section>
+
+            <section className=" flex flex-col items-center w-2/3 my-11 mx-auto  shadow-lg shadow-slate-400 ">
+                <article className="w-full">
+                    <img className=" w-full h-96 object-cover" src="/images/12.jpg" alt="" />
+                </article>
+
+                <article className="p-6  text-gray-700 flex flex-col items-center text-center">
+                    <h1 className="text-center text-4xl m-4">Enjoy your life ...</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero quas
+                        aliquam atque minus excepturi, repudiandae tempora nesciunt voluptatum, reiciendis laborum
+                        ipsam culpa doloremque obcaecati voluptas eaque, earum vero harum?
                     </p>
                 </article>
             </section>
