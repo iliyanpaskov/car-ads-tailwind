@@ -12,7 +12,7 @@ const GalleryInterior = () => {
                 <img className="w-full h-96 object-cover" src="/images/10.jpg" alt="" />
             </div>
 
-            <article>
+            <article className="my-11 grid grid-cols-3 gap-6 ">
                 {isLoaded
                     ? images[0].map(x => <ImageCard key={x.objectId} image={x.images.url} />)
                     : <></>}
