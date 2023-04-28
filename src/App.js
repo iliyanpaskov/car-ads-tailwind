@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import WhyMustang from "./components/WhyMustang";
 import GetNotifications from "./components/GetNotifications";
 import NotFound from "./components/NotFound";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/mustang" element={<WhyMustang />} />
           <Route path="/get-notifications" element={<GetNotifications />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
 

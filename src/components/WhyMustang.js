@@ -3,7 +3,7 @@ const WhyMustang = () => {
         <>
             <section className=" flex flex-col items-center w-2/3 my-11 mx-auto  shadow-lg shadow-slate-400 ">
                 <article>
-                    <img className="shadow-lg shadow-slate-400 " src="https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/suvs-crossovers/mache/21-9/22_FRD_MCH_48112_21x9.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="eco" />
+                    <img className="shadow-lg shadow-slate-400 " src="/images/t.webp" alt="eco" />
                 </article>
 
                 <article className="p-6  text-gray-700">
@@ -44,6 +44,19 @@ const WhyMustang = () => {
                         ipsam culpa doloremque obcaecati voluptas eaque, earum vero harum?
                     </p>
                     <img className="w-28 m-3" src="/images/eco.png" alt="eco" />
+                </article>
+            </section>
+
+            <section className=" flex flex-col items-center w-2/3 my-11 mx-auto  shadow-lg shadow-slate-400 ">
+                <article className="w-full">
+                    <img className=" w-full h-96 object-cover" src="/images/6w.webp" alt="" />
+                </article>
+
+                <article  className="p-6  text-gray-700 flex flex-col items-center text-center">
+                    <h1 className="text-center text-4xl m-4">GT with 480 horsepower !</h1>
+                    <p>
+                    Is the Ford Mustang MACH-E fast? The 2023 Mustang MACH-E ranges in power from the Select with 266 horsepower to the GT with 480 horsepower.
+                    </p>
                 </article>
             </section>
         </>
