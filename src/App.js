@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import WhyMustang from "./components/WhyMustang";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main className="w-11/12 max-w-7xl">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/mustang" element={<WhyMustang />} />
         </Routes>
 
       </main>
