@@ -1,5 +1,6 @@
 import { useImagesFetch } from "../hooks/useImagesFetch";
 import ImageCard from "./ImageCard";
+import Loading from "./Loading";
 const url = `${process.env.REACT_APP_INTERIOR_IMAGES_URL}`;
 
 const GalleryInterior = () => {
@@ -15,7 +16,7 @@ const GalleryInterior = () => {
             <article className="my-11 grid grid-cols-3 gap-6 ">
                 {isLoaded
                     ? images[0].map(x => <ImageCard key={x.objectId} image={x.images.url} />)
-                    : <></>}
+                    : <Loading/>}
             </article>
         </section>
     )
