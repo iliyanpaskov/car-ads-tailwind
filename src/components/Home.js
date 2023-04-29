@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PlayButton from "./PlayButton";
 
 const Home = () => {
     return (
@@ -44,13 +45,16 @@ const Home = () => {
 
             <article className="w-full  bg-blue-900 my-24 text-white text-center p-2 box-content flex flex-col items-center shadow-lg shadow-slate-400">
                 <p className="p-4 text-lg">If you like Ford Mustang Mach-E you can sign up for online notifications and promotions. That way can be one of the first informed. Sign up here!</p>
-                <Link  to='/get-notifications' className="text-xl border-2 p-2 block w-72 rounded-xl bg-white hover:bg-blue-500 text-black font-semibold">Get notifications! <i className="fa-regular fa-envelope fa-shake"></i></Link>
+                <Link to='/get-notifications' className="text-xl border-2 p-2 block w-72 rounded-xl bg-white hover:bg-blue-500 text-black font-semibold">Get notifications! <i className="fa-regular fa-envelope fa-shake"></i></Link>
             </article>
 
             <article className="flex flex-col items-center w-full">
                 <h2 className="font-semibold text-4xl text-blue-900 my-3">Take Charge of Your Life</h2>
                 <p className="max-w-lg text-center font-semibold p-3">Goodbye gas. Hello freedom. The high-performance all-electric Mustang Mach-E SUV gives you 0-60 thrills, expansive range and zero emissions</p>
-                <img className="shadow-md shadow-slate-500" src="/images/25.jpg" alt="mustang" />
+                <section className="relative">
+                    <PlayButton />
+                    <img className=" shadow-md shadow-slate-500" src="/images/25.jpg" alt="mustang" />
+                </section>
             </article>
 
             <article className="flex flex-col my-24 items-center">
