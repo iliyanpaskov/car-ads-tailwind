@@ -52,7 +52,7 @@ const Home = () => {
                 <h2 className="font-semibold text-4xl text-blue-900 my-3">Take Charge of Your Life</h2>
                 <p className="max-w-lg text-center font-semibold p-3">Goodbye gas. Hello freedom. The high-performance all-electric Mustang Mach-E SUV gives you 0-60 thrills, expansive range and zero emissions</p>
                 <section className="relative">
-                    <PlayButton />
+                    <PlayButton url={"https://www.youtube.com/embed/7RqwBtNUKs0"} />
                     <img className=" shadow-md shadow-slate-500" src="/images/25.jpg" alt="mustang" />
                 </section>
             </article>

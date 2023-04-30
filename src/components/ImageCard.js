@@ -11,7 +11,6 @@ const ImageCard = (image) => {
 
     const showModal = () => {
         setOpenModal(true);
-        // console.log(picture);
     }
 
     return (
