@@ -1,7 +1,7 @@
-const url = `${process.env.REACT_APP_EMAILS_URL}`;
 const headers = {
     "X-Parse-Application-Id": `${process.env.REACT_APP_APPLICATION_ID}`,
     "X-Parse-REST-API-Key": `${process.env.REACT_APP_API_KEY}`,
+    "Content-Type": "application/json",
 }
 
 export async function getEmails() {
@@ -17,6 +17,28 @@ export async function getEmails() {
             throw data.error;
         }
     } catch (error) {
-        console.log(error);
+        //TODO errors
+    }
+}
+
+export async function sendEmail(firstName, lastName, email) {
+
+    try {
+        const res = await fetch(`${process.env.REACT_APP_EMAILS_URL}`, {
+            method: 'POST',
+            headers,
+            body: JSON.stringify({
+                firstName,
+                lastName,
+                email,
+            })
+        });
+        const result = res.json();
+        if (result.error) {
+            throw result.error;
+        }
+        
+    } catch (error) {
+        //TODO error
     }
 }

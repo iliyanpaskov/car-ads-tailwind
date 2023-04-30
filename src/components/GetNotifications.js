@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import { getEmails } from "../services/signUpEmailsServices";
+import { useNavigate } from "react-router-dom";
+import { getEmails, sendEmail } from "../services/signUpEmailsServices";
+import SentMessage from "./SentMessage";
 
 const GetNotifications = () => {
     const [firstName, setFirstName] = useState('');
@@ -11,6 +13,9 @@ const GetNotifications = () => {
     const [isNotValidLName, setIsNotValidLName] = useState(true);
     const [isNotValidEmail, setIsNotValidEmail] = useState(true);
     const [isSignUpEmail, setIsSignUpEmail] = useState(true);
+    const [openMessage, setOpenMessage] = useState(false);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchEmails = async () => {
@@ -18,7 +23,7 @@ const GetNotifications = () => {
             setAllEmails(data[0]);
         }
         fetchEmails();
-    }, [])
+    }, []);
 
     const handleFirstName = (e) => {
         setFirstName(e.target.value);
@@ -67,10 +72,21 @@ const GetNotifications = () => {
         }
     }
 
+    const showMessage = () => {
+        setOpenMessage(true);
+    }
+
     const onSubmitHandler = (e) => {
         e.preventDefault();
+        sendEmail(firstName, lastName, email);
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        showMessage();
 
-
+        setTimeout(() => {
+            navigate('/')
+        }, 2000);
     }
 
 
@@ -114,6 +130,7 @@ const GetNotifications = () => {
                     </div>
                 </form>
             </div>
+            <SentMessage open={openMessage} />
         </div>
     )
 }
