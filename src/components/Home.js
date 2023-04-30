@@ -7,6 +7,9 @@ const Home = () => {
             <article className="w-full shadow-lg shadow-slate-400 relative">
                 <h1 className="text-white text-3xl font-semibold absolute start-8 top-5 ">2023 FORD MUSTANG MACH-E</h1>
                 <img className="w-full" src="./images/1w.webp" alt="car" />
+                <div className="absolute bottom-60 left-24">
+                    <PlayButton url={"https://www.youtube.com/embed/S4sIn0165LQ"} />
+                </div>
                 <section className="flex border border-gray-300">
                     <article className=" border border-gray-300 w-1/4 text-center p-4">
                         <p className="text-lg">Starting at:</p>
@@ -52,7 +55,9 @@ const Home = () => {
                 <h2 className="font-semibold text-4xl text-blue-900 my-3">Take Charge of Your Life</h2>
                 <p className="max-w-lg text-center font-semibold p-3">Goodbye gas. Hello freedom. The high-performance all-electric Mustang Mach-E SUV gives you 0-60 thrills, expansive range and zero emissions</p>
                 <section className="relative">
-                    <PlayButton url={"https://www.youtube.com/embed/7RqwBtNUKs0"} />
+                    <div className="absolute bottom-36 left-28">
+                        <PlayButton url={"https://www.youtube.com/embed/7RqwBtNUKs0"} />
+                    </div>
                     <img className=" shadow-md shadow-slate-500" src="/images/25.jpg" alt="mustang" />
                 </section>
             </article>
@@ -60,8 +65,11 @@ const Home = () => {
             <article className="flex flex-col my-24 items-center">
                 <h1 className="font-semibold text-4xl text-blue-900 my-3 p-4">Roam Far and Wide on a Single Charge</h1>
                 <p className="text-center max-w-3xl text-base m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, cupiditate quam. Libero veniam nihil distinctio blanditiis facilis magnam id, et eligendi asperiores fugit eum obcaecati laborum perspiciatis in consectetur vitae?</p>
-                <div className="w-full  ">
+                <div className="w-full relative">
                     <img className="w-full max-h-96 object-cover shadow-md shadow-slate-500" src="/images/4w.webp" alt="Charge" />
+                    <div className="absolute bottom-36 right-40">
+                        <PlayButton url={"https://www.youtube.com/embed/aZqgutxMjpM"} />
+                    </div>
                 </div>
             </article>
         </section>
