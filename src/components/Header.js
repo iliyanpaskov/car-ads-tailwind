@@ -23,7 +23,7 @@ const Header = () => {
                             <Link to='/gallery'>Gallery</Link>
                         </li>
                         <li className="text-lg hover:underline">
-                            <Link to='/mustang'>Why the Mustang? </Link>
+                            <Link to='/mustang'>Why Mustang? </Link>
                         </li>
                         <li className="text-lg hover:underline">
                             <Link to='/get-notifications'>Get notifications</Link>

@@ -1,4 +1,3 @@
-import PlayButton from "./PlayButton";
 import { Link } from "react-router-dom";
 
 const Gallery = () => {
