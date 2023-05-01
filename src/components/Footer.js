@@ -9,14 +9,14 @@ const Footer = () => {
             <article className="flex justify-around  bg-blue-900 items-center w-full">
                 <Logo />
                 <ul className="flex w-1/4 justify-between">
-                    <li className="text-white cursor-pointer"><i className="fa-brands fa-facebook text-3xl"></i></li>
-                    <li className="text-white cursor-pointer"><i className="fa-brands fa-twitter text-3xl"></i></li>
-                    <li className="text-white cursor-pointer"><i className="fa-brands fa-square-instagram text-3xl"></i></li>
-                    <li className="text-white cursor-pointer"><i className="fa-brands fa-youtube text-3xl"></i></li>
+                    <li className="text-white cursor-pointer"><i className="fa-brands fa-facebook text-3xl max-lg:text-2xl"></i></li>
+                    <li className="text-white cursor-pointer"><i className="fa-brands fa-twitter text-3xl max-lg:text-2xl"></i></li>
+                    <li className="text-white cursor-pointer"><i className="fa-brands fa-square-instagram text-3xl max-lg:text-2xl"></i></li>
+                    <li className="text-white cursor-pointer"><i className="fa-brands fa-youtube text-3xl max-lg:text-2xl"></i></li>
                 </ul>
             </article>
 
-            <article className=" bg-gray-800 flex justify-around py-6 px-2 w-full">
+            <article className=" bg-gray-800 flex justify-around py-6 px-2 w-full max-sm:flex-col max-sm:items-center max-sm:text-center">
                 <section className="text-white">
                     <h1 className="text-lg text-center">Contact us:</h1>
                     <ul>
@@ -32,8 +32,7 @@ const Footer = () => {
                     </ul>
                 </section>
 
-
-                <section className="text-white">
+                <section className="text-white max-sm:mt-5">
                     <h1 className="text-lg text-center">Navigation:</h1>
                     <ul>
                         <li>
@@ -50,9 +49,9 @@ const Footer = () => {
                 </section>
             </article>
 
-            <article className="flex items-center">
+            <article className="flex items-center max-sm:flex-col">
                 <LogoFord/>
-                <p className="text-sm underline text-gray-600">Practice Tailwind css project! All rights reserved &copy;! </p>
+                <p className="text-sm underline text-gray-600 max-sm:mb-8 max-sm:text-xs">Practice Tailwind css project! All rights reserved &copy;! </p>
             </article>
         </section>
     )
